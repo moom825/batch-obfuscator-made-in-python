@@ -17,7 +17,7 @@ if yorn == "n":
     number = 2
 elif yorn == "y":
     isittrueorfalse = True
-    number = input("please enter the number of ^ you want(you can not have more than the lenth of your text): ")
+    number = input("please enter the number of ^ you want(you can not have more than the length of your text): ")
     number = int(number)
 else:
     print("that is not a correct option. now exiting...")
