@@ -62,7 +62,7 @@ class RepObj:
         rval = m.group(1) if self.__counter % self.__every else self.__replace_by
         self.__counter += 1
         return rval
-s = s + """\nset a = %%~i\nset a = % + %~i"%\nset a = %a%\n:aaaaaaaaaaaaaaaaaaaaaaaaaaaaab"""
+s = s + """\n@echo off\nset a = %%~i\nset a = % + %~i"%\nset a = %a%\n:aaaaaaaaaaaaaaaaaaaaaaaaaaaaab"""
 s = s.replace('%%~', 'ckoco')        
 s = s.replace('%~', 'croco')
 r = RepObj("replaced",2)
